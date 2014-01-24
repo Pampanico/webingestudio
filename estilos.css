@@ -1,31 +1,166 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-html5:before {
+	content: "\e600";
+	margin-top: 0.3em;
+	color: orange;
+	font-size: 1.4em;
+
+}
+.icon-earth:before {
+	content: "\e601";
+	font-size: 3.5em;
+	color: #494848;
+}
+.icon-search:before {
+	content: "\e602";
+	font-size: 3.5em;
+	color: #494848;
+}
+.icon-cart:before {
+	content: "\e603";
+	font-size: 3.5em;
+	color: #494848;
+}
+
+
+a
+{
+	text-decoration: none;
+	color: orange;
+}
 body
 {
 	margin: 0 auto;
-	width: 1200px;
+	width: 100%;
+	font-family: "Open Sans", Arial;
 }
+#lema
+{
+	height: 12em;
+	width: 100%;
+	position: relative;
+}
+#lema p
+{
+	font-family: "PT Sans Narrow";
+	position: absolute;
+	width: 100%;
+	top:25%;
+	text-align: center;
+	font-size: 2em;
+	color: #898989;
+}
+
 header
 {
-	background: red;
+	background: url("images/fondo.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+  	background-attachment: fixed;		
 	height: 300px;
 	width: auto;
 	position: relative;
 }
+header h1
+{
+	margin: 0;
+}
 nav
 {
 	background: white;
-	position: absolute;
 	width: 100%;
-	bottom: 0;
+	padding: 0.8em 0;
+	margin: 0 ;
+	position: relative;
+	border-bottom: 1px solid #C7C6C6;
 }
 
-ul
+nav ul
 {
-	
+	margin: 0.2em 0 0.2em 0;
 }
 
-ul li
+nav ul li
 {
 	display: inline-block;
-	height: 2em;
-	padding: 0 2em;
+	padding: 0 1em;
+	margin: 0;
+}
+nav ul li a
+{
+	font-weight: bold;
+	color: #898989;
+	text-decoration: none;
+}
+nav ul #contacto
+{
+	background: #444444;
+	border-radius: 2px;
+	position: absolute;
+	top: 25%;
+	right: 10%;
+	padding: 0.2em 0.5em;
+
+}
+nav ul #contacto a
+{
+ color: white;
+}
+section
+{
+	margin:0 4em;
+}
+section article
+{
+	width: 30%;
+	display: inline-block;
+	margin: 1.5em 0.4em;
+	position: relative;
+}
+section article h3
+{
+	padding: 0.5em 0em 0.5em 4em;
+	margin: 0;
+	color: #898989;
+}
+section article figure:before
+{
+	position: absolute;
+	font-size: 4em;
+}
+section article p{
+	font-size: 0.8em;
+	color:#686767;
+	margin-left: 6em;
+}
+section h2
+{
+	margin: 0;
+	color: #494848;
+	border-bottom: 1px solid #e6e8ea;
+	padding-bottom: 1em;
 }
